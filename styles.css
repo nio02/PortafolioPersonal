@@ -1,0 +1,154 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variables */
+:root {
+    --primary-color: #1e1f27;
+    --secondary-color: #E44C65;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* Hide scrollbar */
+html::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    color: white;
+}
+
+/* header */
+
+header {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 7.3vh;
+    width: 95vw;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited { /* Elimina el color del enlace al ser clickeado */
+    color: inherit;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0;
+    margin-left: 16px;
+    padding-left: 10px;
+}
+
+#nav-bar {
+    display: flex;
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+}
+
+#nav-contact {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    border: 0;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#nav-contact:hover { /*Al pasarl el mouse se activan estos estilos*/
+    background-color: #e76278;
+}
+
+/* Info */
+
+#my-info {
+    padding: 69px;
+    display: flex;
+    text-align: right;
+    justify-content: center;
+}
+
+#info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#info-text h2{
+    margin: 0;
+    padding: 0;
+    font-size: 38.3333px;
+    font-weight: 300;
+    font-style: bold;
+}
+
+#info-text p{
+    margin: 0;
+    margin-top: 9.6px;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 100;
+    width: 358px;
+    display: flex;
+    text-align: left;
+}
+
+#personal-photo {
+    margin: 0;
+}
+
+#personal-photo img{
+    margin: 0;
+    margin-left: 46px;
+    height: 276px;
+    width: 276px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+#background-banner {
+    background-color: #1e1f27;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#background-banner a {
+    margin: 0;
+    padding: 0;
+    height: 77px;
+    width: 153px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0%;
+}
+
+/* skills */
+
