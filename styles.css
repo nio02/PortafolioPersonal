@@ -8,7 +8,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /*Hace que se mueva suavemente*/
 }
 /* Hide scrollbar */
 html::-webkit-scrollbar{
@@ -127,15 +127,17 @@ nav li {
     width: 276px;
     border-radius: 100%;
     object-fit: cover;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25)); /*Filter funciona con elementos irregulares*/
 }
 
 #background-banner {
-    background-color: #1e1f27;
+    background-color: var(--primary-color);
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 #background-banner a {
