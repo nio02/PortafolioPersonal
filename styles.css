@@ -37,6 +37,7 @@ header {
     /* Para animaciones */
     opacity: 0;
     animation: aparecer 1.5s ease forwards;
+    z-index: 11;
 }
 
 a {
@@ -148,6 +149,8 @@ nav li {
     align-items: center;
     justify-content: center;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    position: relative;
 }
 
 #background-banner a {
@@ -168,7 +171,114 @@ nav li {
     height: 100vh;
     display: flex;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
+    z-index: 9;
+    position: relative;
+    background-image: url(./img/tw-logo.png);
+}
+
+#skills {
+    margin-top: 20vh;
+    height: 80vh;
+    width: 100VW;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skills::before { /*Esta es una linea decorativa*/
+    content: "";
+    position: absolute;
+    top: 20vh;
+    width: 100vw;
+    height: 8px;
+    background-color: var(--secondary-color);
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 38.3333px;
+    font-weight: 200;
+    font-style: bold;
+}
+
+#more-info {
+    margin: 0;
+    margin-top: 100px;
+}
+
+.half-screen {
+    display: flex;
+}
+
+.cards-container {
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-content {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    text-align: center;
+}
+
+.skill-content p {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: gray;
+    border-radius: 25px;
+    text-align: center;
+    width:180px;
+}
+
+.skill-card h4{
+    margin: 0;
+}
+
+.skill-card p{
+    margin: 0;
+}
+
+.skill-logo {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-logo img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+#background-skills a {
+    margin: 0;
+    padding: 0;
+    height: 77px;
+    width: 153px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0%;
 }
 
 /* Projects */
 
+#background-projects {
+    height: 100vh;
+    background-color: aqua;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
+    z-index: 9;
+}
