@@ -5,6 +5,7 @@
 :root {
     --primary-color: #1e1f27;
     --secondary-color: #E44C65;
+    --secondhover-color: #e76278;
 }
 
 html {
@@ -83,7 +84,7 @@ nav li {
 }
 
 #nav-contact:hover { /*Al pasarl el mouse se activan estos estilos*/
-    background-color: #e76278;
+    background-color: var(--secondhover-color);
 }
 
 /* Info */
@@ -153,7 +154,7 @@ nav li {
     position: relative;
 }
 
-#background-banner a {
+#banner-next {
     margin: 0;
     padding: 0;
     height: 77px;
@@ -197,7 +198,7 @@ nav li {
 
 #skills h2 {
     text-align: center;
-    font-size: 38.3333px;
+    font-size: 35px;
     font-weight: 200;
     font-style: bold;
 }
@@ -216,6 +217,7 @@ nav li {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .skill-content {
@@ -244,10 +246,12 @@ nav li {
 
 .skill-card h4{
     margin: 0;
+    font-weight: 400;
 }
 
 .skill-card p{
     margin: 0;
+    font-size: 15px;
 }
 
 .skill-logo {
@@ -262,7 +266,7 @@ nav li {
     border-radius: 10px;
 }
 
-#background-skills a {
+#skills-next {
     margin: 0;
     padding: 0;
     height: 77px;
@@ -278,7 +282,102 @@ nav li {
 
 #background-projects {
     height: 100vh;
-    background-color: aqua;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
-    z-index: 9;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#my-projects {
+    margin-top: 7.3vh;
+    height: 92.7vh;
+    background-color: var(--primary-color);
+}
+
+#my-projects h2 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.project-card {
+    display: flex;
+    border: solid 1px;
+    border-color: var(--secondary-color);
+    border-radius: 20px;
+    height: 200px;
+    width: 65vw;
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+.project-text {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-text h3, p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.project-title {
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.project-status {
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.project-photo {
+    margin: 10px;
+}
+
+.project-photo img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+#project-next {
+    margin: 0;
+    padding: 0;
+    height: 77px;
+    width: 153px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0%;
+}
+
+/* Contacto */
+
+#background-contact {
+    height: 100vh;
+    background-color: white;
+    
 }
