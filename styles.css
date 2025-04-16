@@ -158,6 +158,17 @@ nav li {
     position: relative;
 }
 
+#banner-links-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+#banner-links-container svg {
+    fill: var(--secondary-color);
+    height: 50px;
+}
+
 #banner-next {
     margin: 0;
     padding: 0;
@@ -174,7 +185,7 @@ nav li {
 
 #background-skills {
     /* Parallax Scrolling*/
-    background-image: url(/img/back-4.jpg);
+    background-image: url(/img/back-2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -246,7 +257,10 @@ nav li {
     padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    background-color: gray;
+    /* background-color: var(--primary-color); */
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0));
+    border: 1px solid var(--secondary-color);
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     text-align: center;
     width:180px;
@@ -300,6 +314,7 @@ nav li {
     flex-direction: column;
     align-items: center;
     position: relative;
+    z-index: 6;
 }
 
 #my-projects {
@@ -335,6 +350,8 @@ nav li {
     width: 65vw;
     margin-bottom: 50px;
     padding-left: 20px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0))
 }
 
 .project-text {
@@ -398,11 +415,15 @@ nav li {
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 6;
+    z-index: 5;
 }
 
 #background-contact h2 {
     margin-top: 10vh;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    font-style: bold;
 }
 
 #contact-container {
@@ -422,15 +443,18 @@ nav li {
 #contact-form p {
     margin: 30px 0;
     text-align: left;
+    width: 100%;
 }
 
 #contact-form input {
     width: 100%;
-    padding: 5px  10px;
+    padding: 10px  15px;
     border: none;
     border-radius: 50px;
     height: 30px;
     font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 300;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
 }
 
@@ -439,25 +463,31 @@ nav li {
 }
 
 #contact-send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
     margin-top: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 20px 15px;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 50px;
     font-family: 'Roboto';
     background-color: var(--secondary-color);
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     border: 0;
     cursor: pointer;
     transition: 0.5s ease;
 }
 
-#contact-send:hover { /*Al pasarl el mouse se activan estos estilos*/
+#contact-send:hover { /*Al pasarle el mouse se activan estos estilos*/
     background-color: white;
     color: var(--secondary-color);
+}
+
+#contact-send:active {
+    background-color: #1e1f27;
 }
 
 #contact-links {
@@ -479,4 +509,22 @@ nav li {
 
 #contact-CV svg {
     stroke: var(--primary-color);
+}
+
+#contact-links p {
+    margin: 0;
+    margin-top: 50px;
+}
+
+#contact-message {
+    /* Para animaciones */
+    opacity: 0;
+    animation: aparecer 2.5s ease forwards;
+    position: absolute;
+    top: 200px
+}
+
+#contact-container p {
+    font-weight: 200;
+    font-size: 18px;
 }
