@@ -11,7 +11,7 @@ document.getElementById("contact-send").addEventListener('click', () => {
         mensaje.id = 'contact-message'
         mensaje.textContent = `${nombre}, ¡Estaremos en contacto pronto!`;
         document.getElementById("contact-links").appendChild(mensaje);
-        //Form back to zero
+        //Devuelve el formulario a cero
         input.value = '';
         email.value = '';
         phone.value = '';
