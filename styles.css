@@ -35,6 +35,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    color: white;
     /* Para animaciones */
     opacity: 0;
     animation: aparecer 1.5s ease forwards;
@@ -43,10 +44,12 @@ header {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 a:visited { /* Elimina el color del enlace al ser clickeado */
-    color: inherit;
+    color: white;
+    text-decoration: none;
 }
 
 nav ul {
@@ -144,7 +147,7 @@ nav li {
 
 #background-banner {
     /* Parallax Scrolling*/
-    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url(/img/back-1.jpg);
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url(./img/back-1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -186,7 +189,7 @@ nav li {
 
 #background-skills {
     /* Parallax Scrolling*/
-    background-image: url(/img/back-2.jpg);
+    background-image: url(./img/back-2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -305,7 +308,7 @@ nav li {
 
 #background-projects {
     /* Parallax Scrolling*/
-    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url(/img/back-3.jpg);
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url(./img/back-3.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -407,7 +410,7 @@ nav li {
 
 #background-contact {
     /* Parallax Scrolling*/
-    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url(/img/back-4.jpg);
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url(./img/back-4.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
