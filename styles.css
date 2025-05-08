@@ -394,6 +394,55 @@ nav li {
     border-radius: 10px;
 }
 
+.buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.demo-button {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    border: 0;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.repo-button {
+    display: flex;
+    padding: 1px 15px;
+    width: fit-content;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    background-color: white;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 300;
+    border: 0;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.repo-button a{
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+#nav-contact:hover { /*Al pasarl el mouse se activan estos estilos*/
+    background-color: var(--secondhover-color);
+}
+
 #project-next {
     margin: 0;
     padding: 0;
