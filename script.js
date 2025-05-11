@@ -17,3 +17,13 @@ document.getElementById("contact-send").addEventListener('click', () => {
         phone.value = '';
     }
 })
+
+//Hamburguer menu
+const toggle = document.getElementById("nav-toggle");
+toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    const items = document.getElementById("_items");
+
+    items.classList.toggle("open")
+    toggle.classList.toggle("close")
+})
