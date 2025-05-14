@@ -29,8 +29,8 @@ body {
 header {
     margin-left: 2.5%;
     margin-right: 2.5%;
-    height: 7.3vh;
-    width: 95vw;
+    height: 7.3dvh;
+    width: 95dvw;
     background-color: none;
     display: flex;
     justify-content: space-between;
@@ -132,7 +132,8 @@ nav li {
     padding: 0;
     font-size: 20px;
     font-weight: 100;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     display: flex;
     text-align: left;
 }
@@ -158,7 +159,7 @@ nav li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,7 +184,7 @@ nav li {
     height: 50px;
 }
 
-#banner-next {
+.button-next {
     margin: 0;
     padding: 0;
     height: 77px;
@@ -206,7 +207,7 @@ nav li {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
     z-index: 9;
@@ -214,8 +215,8 @@ nav li {
 }
 
 #skills {
-    margin-top: 20vh;
-    height: 80vh;
+    margin-top: 20dvh;
+    height: 80dvh;
     background-color: rgba(23, 24, 32, 0.95);
     display: flex;
     flex-direction: column;
@@ -225,8 +226,8 @@ nav li {
 #skills::before { /*Esta es una linea decorativa*/
     content: "";
     position: absolute;
-    top: 20vh;
-    width: 100vw;
+    top: 20dvh;
+    width: 100dvw;
     height: 8px;
     background-color: var(--secondary-color);
 }
@@ -244,7 +245,9 @@ nav li {
 }
 
 .half-screen {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 225px 225px;
     padding: 0;
 }
 
@@ -253,13 +256,14 @@ nav li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 15px;
+    flex-wrap: wrap;
 }
 
 .skill-content {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 50dvw;
     text-align: center;
 }
 
@@ -280,7 +284,8 @@ nav li {
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     text-align: center;
-    width:180px;
+    width: 20%;
+    height: fit-content;
 }
 
 .skill-card h4{
@@ -300,21 +305,9 @@ nav li {
 }
 
 .skill-logo img {
-    height: 150px;
-    width: 150px;
+    height: 75px;
+    width: 75px;
     border-radius: 10px;
-}
-
-#skills-next {
-    margin: 0;
-    padding: 0;
-    height: 77px;
-    width: 153px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0%;
 }
 
 /* Projects */
@@ -325,7 +318,7 @@ nav li {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 100dvh;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
@@ -335,8 +328,8 @@ nav li {
 }
 
 #my-projects {
-    margin-top: 7.3vh;
-    height: 92.7vh;
+    margin-top: 7.3dvh;
+    height: 92.7dvh;
 }
 
 #my-projects h2 {
@@ -355,7 +348,7 @@ nav li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 80dvh;
 }
 
 .project-card {
@@ -364,7 +357,7 @@ nav li {
     border-color: var(--secondary-color);
     border-radius: 20px;
     height: 200px;
-    width: 65vw;
+    width: 65dvw;
     margin-bottom: 50px;
     padding-left: 20px;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
@@ -456,18 +449,6 @@ nav li {
     background-color: var(--secondhover-color);
 }
 
-#project-next {
-    margin: 0;
-    padding: 0;
-    height: 77px;
-    width: 153px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0%;
-}
-
 /* Contact */
 
 #background-contact {
@@ -476,7 +457,7 @@ nav li {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -485,7 +466,7 @@ nav li {
 }
 
 #background-contact h2 {
-    margin-top: 10vh;
+    margin-top: 10dvh;
     text-align: center;
     font-size: 30px;
     font-weight: 200;
@@ -493,7 +474,7 @@ nav li {
 }
 
 #contact-container {
-    height: 80vh;
+    height: 80dvh;
     display: flex;
 }
 
@@ -503,7 +484,7 @@ nav li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vh;
+    width: 50dvh;
 }
 
 #contact-form p {
@@ -620,6 +601,15 @@ nav li {
         margin-left: 40px;
     }
     
+    /* Skills */
+    .skill-title {
+        font-size: 12px;
+    }
+
+    .skill-card p{
+        margin: 0;
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -632,12 +622,10 @@ nav li {
     }
 
     #info-text h2{
-
         text-align: center;
     }
 
     #info-text p{
-
         text-align: center;
     }
 
@@ -721,13 +709,51 @@ nav li {
     .open{
         transform: translateX(0) !important;
     }
-}
 
+    /* Skills */
+    #background-skills{
+        height: auto;
+    }
+    #skills {
+        height: auto;
+        width: 100%;
+    }
+
+    .half-screen {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .cards-container {
+        margin-bottom: 50px;
+        flex-wrap: nowrap;
+    }
+
+    .skill-logo img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .skill-card{
+        width: fit-content;
+    }
+
+    #skills-next {
+        position: relative;
+    }
+}
 
 @media (max-width: 475px) {
     #my-info p{
         font-size: 12px;
         word-wrap: break-word;
         overflow-wrap: break-word;
+    }
+
+    #personal-photo img{
+        height: 195px;
+        width: 195px;
     }
 }
