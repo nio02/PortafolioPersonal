@@ -27,3 +27,14 @@ toggle.addEventListener('click', (e) => {
     items.classList.toggle("open")
     toggle.classList.toggle("close")
 })
+
+//Responsive Text
+
+window.addEventListener('resize', () => {
+    const textoResponsivo = document.getElementById("links-message");
+    if(window.innerWidth < 768){
+        textoResponsivo.textContent = "No olvides revisar estos enlaces.";
+    } else{
+        textoResponsivo.textContent = "No olvides revisar los siguientes enlaces:";
+    }
+})

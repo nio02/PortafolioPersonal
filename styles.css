@@ -368,6 +368,7 @@ nav li {
     margin: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .project-text h3, p {
@@ -610,6 +611,48 @@ nav li {
         margin: 0;
         font-size: 12px;
     }
+
+    /* Projects */
+    #projects-container {
+        width: 650px;
+    }
+
+    .project-card {
+        width: 75dvw;
+    }
+
+    .buttons-container {
+        flex-wrap: wrap;
+    }
+
+    .project-description {
+        font-size: 15px;
+    }
+
+    /* Contact */
+    #background-contact h2{
+        font-size: 25px;
+    }
+
+    #contact-links {
+        margin: 0;
+        padding-right: 100px;
+    }
+
+    #contact-links-container svg {
+        fill: var(--secondary-color);
+        height: 80px;
+    }
+
+    #contact-form input {
+        width: 100%;
+        padding: 5px  10px;
+        font-size: 15px;
+    }
+
+    #contact-form p{
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -743,6 +786,94 @@ nav li {
     #skills-next {
         position: relative;
     }
+    
+    /* Projects */
+    #background-projects {
+        height: auto;
+        width: 100%;
+        position: relative;
+    }
+
+    #my-projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: auto;
+    }
+
+    #my-projects h2{
+        margin-bottom: 25px;
+    }
+
+    #projects-container {
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .project-card {
+        padding: 0 15px;
+        height: auto;
+        width: 75dvw;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-photo img {
+        height: 150px;
+        width: auto;
+        border-radius: 10px;
+    }
+
+    /* Contact */
+    #background-contact {
+        height: auto;
+    }
+
+    #background-contact h2{
+        font-size: 25px;
+    }
+
+    #contact-links {
+        margin: 0;
+        padding-right: 0;
+        flex-direction: column-reverse;
+    }
+
+    #contact-links p {
+        margin: 20px 0;
+    }
+
+    #contact-links-container svg {
+        fill: var(--secondary-color);
+        height: 80px;
+    }
+
+    #contact-form {
+        margin-bottom: 50px;
+    }
+
+    #contact-form input {
+        width: 100%;
+        padding: 5px  10px;
+        font-size: 15px;
+    }
+
+    #contact-form p{
+        font-size: 16px;
+    }
+
+    #contact-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #contact-message {
+        position: static;
+        margin-top: 50px;
+    }
+
 }
 
 @media (max-width: 475px) {
@@ -755,5 +886,31 @@ nav li {
     #personal-photo img{
         height: 195px;
         width: 195px;
+    }
+
+    /* Contact */
+
+    #background-contact h2{
+        font-size: 20px;
+    }
+
+    #contact-container {
+        width: 100%;
+    }
+
+    #contact-form {
+        margin: auto;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    #contact-form input {
+        width: 80%;
+        padding: 5px  10px;
+        font-size: 15px;
+    }
+
+    #contact-form p {
+        margin-left: 50px;
     }
 }
